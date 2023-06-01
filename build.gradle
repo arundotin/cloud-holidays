@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.arun'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+//sourceCompatibility = '17'
 
 repositories {
 	mavenCentral()
@@ -15,7 +15,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//implementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
+	implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.2'
 	implementation 'com.tngtech.archunit:archunit:1.0.1'
 }
 
